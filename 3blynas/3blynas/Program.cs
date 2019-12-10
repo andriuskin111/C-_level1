@@ -10,12 +10,15 @@ namespace _3blynas
     {
         static void Main(string[] args)
         {
+            int nameCount = 0;
             string vardas = "";
             while (vardas != "stop")
             {
                 Console.WriteLine("Iveskite savo varda: ");
                 vardas = Console.ReadLine();
+                nameCount++;
                 Console.WriteLine("Sveiki {0} [ENTER - testi]", vardas);
+                Console.WriteLine("Vardu skaicius: {0}", nameCount);
             }
             Console.Clear();
             Console.WriteLine("ate...");
