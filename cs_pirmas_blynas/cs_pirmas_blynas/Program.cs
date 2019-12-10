@@ -10,6 +10,8 @@ namespace cs_pirmas_blynas
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("HI!");
+            Console.ReadLine();
         }
     }
 }
