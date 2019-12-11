@@ -8,6 +8,7 @@ namespace Dalintuvas
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             double a;
@@ -22,38 +23,38 @@ namespace Dalintuvas
             b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("iveskite veiksma [+ - / *]");
             veiksmas = Console.ReadLine();
-                Console.WriteLine(veiksmas);
 
-            if (veiksmas == "+")
-            {
-                rezultatas = a + b;
-                    Console.WriteLine("Resultatas yra: {0} ", rezultatas);
+                switch (veiksmas)
+                {
+                    case "+":
+                        rezultatas = a + b;
+                        RodytiRezultata(rezultatas);
+                        break;
+                    case "-":
+                        rezultatas = a - b;
+                        RodytiRezultata(rezultatas);
+                        break;
+                    case "/":
+                        rezultatas = a / b;
+                        RodytiRezultata(rezultatas);
+                        break;
+                    case "*":
+                        rezultatas = a * b;
+                        RodytiRezultata(rezultatas);
+                        break;
+                    default:
+                        Console.WriteLine("neteisingai ivestas veiksmas, pakartokite");
+                        break;
                 }
 
-            if (veiksmas == "-")
-            {
-                rezultatas = a - b;
-                    Console.WriteLine("Resultatas yra: {0} ", rezultatas);
-                }
-
-            if (veiksmas == "/")
-            {
-                rezultatas = a / b;
-                    Console.WriteLine("Resultatas yra: {0} ", rezultatas);
-                }
-
-            if (veiksmas == "*")
-            {
-                rezultatas = a * b;
-                    Console.WriteLine("Resultatas yra: {0} ", rezultatas);
-                }
-            else
-            {
-                Console.WriteLine("Neteisingas veiksmas, iveskite is naujo");
-            }
+            
                 
             veiksmas = "";
             Console.ReadLine();
+            }
+                 void RodytiRezultata(double aRezultatas)
+            {
+                Console.WriteLine("Resultatas yra: {0} ", aRezultatas);
             }
         }
     }
