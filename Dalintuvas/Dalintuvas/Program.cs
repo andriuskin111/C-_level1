@@ -21,7 +21,7 @@ namespace Dalintuvas
             a = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("iveskite antra skaiciu");
             b = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("iveskite veiksma [+ - / *]");
+            Console.WriteLine("iveskite veiksma [+ - / *] arba exit");
             veiksmas = Console.ReadLine();
 
                 switch (veiksmas)
@@ -42,15 +42,15 @@ namespace Dalintuvas
                         rezultatas = a * b;
                         RodytiRezultata(rezultatas);
                         break;
+                    case "exit":
+                        Console.WriteLine("viso gero!");
+                        Console.ReadLine();
+                        break;
                     default:
                         Console.WriteLine("neteisingai ivestas veiksmas, pakartokite");
                         break;
                 }
 
-            
-                
-            veiksmas = "";
-            Console.ReadLine();
             }
                  void RodytiRezultata(double aRezultatas)
             {
