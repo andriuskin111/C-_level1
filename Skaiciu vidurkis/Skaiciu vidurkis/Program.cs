@@ -39,6 +39,8 @@ namespace Skaiciu_vidurkis
                     Console.WriteLine(e.Message);
                     Console.ReadLine();
                     Console.Clear();
+                    Console.WriteLine("Skaiciu vidurkio skaiciavimas");
+                    Console.WriteLine("[Pradeti - Enter] [iseiti - e]");
                 }
             }
             
