@@ -10,6 +10,14 @@ namespace Simboliu_staciakampis
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Iveskite simboli");
+            string simbolis = Console.ReadLine();
+            Console.WriteLine("{0}{0}{0}", simbolis);
+            Console.WriteLine("{0} {0}", simbolis);
+            Console.WriteLine("{0} {0}", simbolis);
+            Console.WriteLine("{0} {0}", simbolis);
+            Console.WriteLine("{0}{0}{0}", simbolis);
+            Console.ReadLine();
         }
     }
 }
